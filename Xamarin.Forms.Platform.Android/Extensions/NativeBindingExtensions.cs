@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using Java.Beans;
 
 namespace Xamarin.Forms.Platform.Android
 {
@@ -28,4 +26,3 @@ namespace Xamarin.Forms.Platform.Android
 		}
 	}
 }
-
