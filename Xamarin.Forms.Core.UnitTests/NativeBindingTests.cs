@@ -15,7 +15,6 @@ namespace Xamarin.Forms.Core.UnitTests
 
 		public MockNativeView()
 		{
-			SubViews = new List<MockNativeView>();
 		}
 
 		public void FireBazChanged()
@@ -343,7 +342,7 @@ namespace Xamarin.Forms.Core.UnitTests
 		[Test]
 		public void SetBindingContextToSubviews()
 		{
-			var nativeView = new MockNativeView();
+			var nativeView = new MockNativeView { SubViews = new List<MockNativeView> ()};
 			var nativeViewChild = new MockNativeView();
 
 			nativeViewChild.SetBinding("Foo", new Binding("FFoo", mode: BindingMode.OneWay));
