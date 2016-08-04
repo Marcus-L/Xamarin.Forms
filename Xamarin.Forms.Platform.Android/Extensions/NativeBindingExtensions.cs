@@ -5,9 +5,9 @@ namespace Xamarin.Forms.Platform.Android
 {
 	public static class NativeBindingExtensions
 	{
-		public static void SetBinding(this global::Android.Views.View view, string propertyName, BindingBase binding, string eventSourceName=null)
+		public static void SetBinding(this global::Android.Views.View view, string propertyName, BindingBase binding, string updateSourceEventName = null)
 		{
-			NativeBindingHelpers.SetBinding(view, propertyName, binding, eventSourceName);
+			NativeBindingHelpers.SetBinding(view, propertyName, binding, updateSourceEventName);
 		}
 
 		public static void SetBinding(this global::Android.Views.View view, BindableProperty targetProperty, BindingBase binding)
