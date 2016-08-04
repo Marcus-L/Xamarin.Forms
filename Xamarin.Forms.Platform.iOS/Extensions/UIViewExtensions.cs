@@ -48,9 +48,9 @@ namespace Xamarin.Forms.Platform.iOS
 			NativeBindingHelpers.SetValue(self, targetProperty, binding);
 		}
 
-		public static void SetValue(this UIView target, BindableProperty targetProperty, object @value)
+		public static void SetValue(this UIView target, BindableProperty targetProperty, object value)
 		{
-			NativeBindingHelpers.SetValue(target, targetProperty, @value);
+			NativeBindingHelpers.SetValue(target, targetProperty, value);
 		}
 
 		public static void SetBindingContext(this UIView target, object bindingContext, Func<UIView, IEnumerable<UIView>> getChildren = null)
