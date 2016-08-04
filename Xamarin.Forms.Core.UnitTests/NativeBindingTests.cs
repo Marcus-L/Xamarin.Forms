@@ -13,6 +13,11 @@ namespace Xamarin.Forms.Core.UnitTests
 		public int Bar { get; set; }
 		public string Baz { get; set; }
 
+		public MockNativeView()
+		{
+			SubViews = new List<MockNativeView>();
+		}
+
 		public void FireBazChanged()
 		{
 			BazChanged?.Invoke(this, new TappedEventArgs(null));
